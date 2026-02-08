@@ -2,7 +2,7 @@
     "name": "@voidnside/dev-theme",
     "version": "1.0.0",
     "description": "Type-safe design token management system for CSS variables and Tailwind",
-    "author": "Your Name <your.email@example.com>",
+    "author": "voidnside <contact@voidnside.dev>",
     "repository": {
         "type": "git",
         "url": "https://github.com/voidnside/dev-theme.git"
@@ -38,15 +38,14 @@
         "tailwind",
         "design-system"
     ],
-    "dependencies": {},
     "devDependencies": {
         "@types/node": "^20.0.0",
-        "typescript": "^5.0.0",
-        "tsx": "^4.0.0",
-        "vitest": "^1.0.0",
+        "@typescript-eslint/eslint-plugin": "^8.54.0",
+        "@typescript-eslint/parser": "^8.54.0",
         "eslint": "^8.0.0",
-        "@typescript-eslint/eslint-plugin": "^6.0.0",
-        "@typescript-eslint/parser": "^6.0.0"
+        "tsx": "^4.0.0",
+        "typescript": "^5.0.0",
+        "vitest": "^1.0.0"
     },
     "engines": {
         "node": ">=18.0.0"
