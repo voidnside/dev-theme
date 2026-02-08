@@ -1,0 +1,61 @@
+{
+    "name": "@voidnside/dev-theme",
+    "version": "1.0.0",
+    "description": "Type-safe design token management system for CSS variables and Tailwind",
+    "author": "Your Name <your.email@example.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/voidnside/dev-theme.git"
+    },
+    "homepage": "https://github.com/voidnside/dev-theme",
+    "bugs": {
+        "url": "https://github.com/voidnside/dev-theme/issues"
+    },
+    "license": "MIT",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "src",
+        "package.json",
+        "README.md"
+    ],
+    "scripts": {
+        "dev": "tsc --watch",
+        "build": "tsc",
+        "type-check": "tsc --noEmit",
+        "lint": "eslint src --ext .ts",
+        "test": "vitest",
+        "test:watch": "vitest --watch",
+        "test:coverage": "vitest --coverage",
+        "generate:theme": "tsx scripts/generate-theme.ts",
+        "prepublishOnly": "npm run build && npm run type-check"
+    },
+    "keywords": [
+        "theme",
+        "design-tokens",
+        "css-variables",
+        "tailwind",
+        "design-system"
+    ],
+    "dependencies": {},
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "typescript": "^5.0.0",
+        "tsx": "^4.0.0",
+        "vitest": "^1.0.0",
+        "eslint": "^8.0.0",
+        "@typescript-eslint/eslint-plugin": "^6.0.0",
+        "@typescript-eslint/parser": "^6.0.0"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.js"
+        }
+    }
+}

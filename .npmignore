@@ -1,0 +1,27 @@
+cat > .npmignore << 'EOF'
+tests/
+scripts/
+examples/
+docs/
+.github/
+vitest.config.ts
+.eslintrc.json
+tsconfig.json
+src/
+README.md
+QUICKSTART.md
+FOLDER_STRUCTURE.md
+*.md
+.git
+.gitignore
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+.vscode/
+.idea/
+coverage/
+.env
+styles/theme.css
+lib/generated/
+EOF

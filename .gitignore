@@ -1,0 +1,17 @@
+cat > .gitignore << 'EOF'
+node_modules/
+dist/
+.DS_Store
+.vscode/
+.idea/
+*.log
+npm-debug.log*
+yarn.debug.log*
+yarn-error.log*
+coverage/
+.env
+.env.local
+.turbo/
+styles/theme.css
+lib/generated/
+EOF

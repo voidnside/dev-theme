@@ -1,0 +1,51 @@
+theme-system/
+├── 📄 README.md
+├── 📄 FOLDER_STRUCTURE.md
+├── 📦 package.json
+├── 🔧 tsconfig.json
+├── 🧪 vitest.config.ts
+├── 🔍 .eslintrc.json
+├── 🚫 .gitignore
+│
+├── 📁 src/                          (Source Code)
+│   ├── 📝 index.ts                  (Barrel Export)
+│   ├── 📝 types.ts                  (Type Definitions)
+│   ├── 📝 parse-value.ts            (Value Parsing)
+│   ├── 📝 resolve-node.ts           (Reference Resolution)
+│   ├── 📝 build-css-vars.ts         (CSS Generation)
+│   ├── 📝 build-tailwind-config.ts  (Tailwind Config)
+│   ├── 📝 build-tailwind-css.ts     (CSS File Writer)
+│   ├── 📝 build-tailwind-ts.ts      (TS Config Writer)
+│   └── 📝 demo-theme.ts             (Example Theme)
+│
+├── 📁 tests/                        (Test Suite)
+│   └── 📝 index.test.ts             (20+ Unit Tests)
+│
+├── 📁 scripts/                      (Build Scripts)
+│   └── 📝 generate-theme.ts         (Theme Generation)
+│
+├── 📁 examples/                     (Framework Examples)
+│   ├── 📁 nextjs/                   (Next.js Integration)
+│   │   ├── 📝 lib-themes-brand.ts               (Theme Definition)
+│   │   ├── 📝 tailwind.config.ts               (Tailwind Config)
+│   │   ├── 📝 app-globals.css                  (Global Styles)
+│   │   ├── 📝 app-layout.tsx                   (Root Layout)
+│   │   ├── 📝 app-page.tsx                     (Example Page)
+│   │   └── 📝 lib-hooks-useTheme.ts            (Theme Hook)
+│   ├── 📁 vite/                     (Vite Integration - TODO)
+│   └── 📁 vue/                      (Vue 3 Integration - TODO)
+│
+├── 📁 docs/                         (Documentation)
+│   ├── 📝 API.md                    (API Reference)
+│   ├── 📝 GUIDE.md                  (Usage Guide - TODO)
+│   └── 📝 INTEGRATION.md            (Integration Guide - TODO)
+│
+├── 📁 .github/                      (GitHub Config)
+│   └── 📁 workflows/                (CI/CD Workflows - TODO)
+│
+├── 📁 dist/                         (Compiled Output - Generated)
+│   ├── 📝 index.js
+│   ├── 📝 index.d.ts
+│   └── ... (other compiled files)
+│
+└── 📁 node_modules/                 (Dependencies - Auto Generated)
